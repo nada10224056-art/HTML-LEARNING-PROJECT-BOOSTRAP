@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Project</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light text-dark">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm px-3">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+            <i class="bi bi-code-slash text-primary fs-4"></i>
+            <span>HTML Master Hub</span>
+        </a>
+
+        <span class="navbar-text fs-6 text-white-50 ms-auto d-none d-md-inline">
+            Panduan Interaktif & Modern
+        </span>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container-lg d-flex flex-column gap-4 my-5">
+
+        <!-- Hero Banner -->
+        <header class="bg-primary bg-gradient text-white rounded-4 p-4 p-md-5 shadow-lg position-relative overflow-hidden">
+
+            <span class="badge bg-white text-primary px-3 py-2 rounded-pill fw-bold text-uppercase mb-3 d-inline-block">
+                <i class="bi bi-star-fill text-warning me-1"></i>
+                Interactive Guide
+            </span>
+
+            <h1 class="display-4 fw-bold mb-3">
+                HTML5 Learning Project
+            </h1>
+
+            <p class="lead text-white-50 mb-4">
+                Kuasai fondasi utama pengembangan web modern dengan panduan terstruktur, praktis, dan siap pakai.
+            </p>
+
+            <nav class="d-flex flex-wrap gap-2">
+                <a href="#section-1" class="btn btn-light fw-bold text-primary px-4 py-2 rounded-3 shadow-sm">
+                    <i class="bi bi-play-circle-fill me-1"></i>
+                    Mulai Belajar
+                </a>
+
+                <a href="#section-tools" class="btn btn-outline-light px-4 py-2 rounded-3">
+                    <i class="bi bi-tools me-1"></i>
+                    Tools
+                </a>
+            </nav>
+        </header>
+
+        <!-- Section 1: What is HTML? -->
+        <article id="section-1" class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+
+            <header class="d-flex align-items-center gap-3 border-bottom pb-3 mb-4">
+                <span class="p-3 bg-primary bg-opacity-10 text-primary rounded-3">
+                    <i class="bi bi-rocket-takeoff fs-3"></i>
+                </span>
+
+                <h2 class="h3 fw-bold mb-0">
+                    1. What is HTML?
+                </h2>
+            </header>
+
+            <p class="fs-5 text-secondary mb-4">
+                <strong>HTML</strong> (HyperText Markup Language) adalah fondasi utama dari setiap situs web. Tag HTML memberi tahu peramban web bagaimana struktur konten harus ditampilkan.
+            </p>
+
+            <section class="row g-3 mb-4">
+
+                <article class="col-md-4">
+                    <section class="p-3 rounded-3 bg-light border h-100">
+                        <i class="bi bi-globe fs-4 text-primary mb-2 d-block"></i>
+
+                        <h3 class="h6 fw-bold">
+                            Standard Language
+                        </h3>
+
+                        <p class="small text-muted mb-0">
+                            Bahasa standar global yang dikenali oleh semua browser web di dunia.
+                        </p>
+                    </section>
+                </article>
+
+                <article class="col-md-4">
+                    <section class="p-3 rounded-3 bg-light border h-100">
+                        <i class="bi bi-diagram-3 fs-4 text-success mb-2 d-block"></i>
+
+                        <h3 class="h6 fw-bold">
+                            Document Structure
+                        </h3>
+
+                        <p class="small text-muted mb-0">
+                            Menata kerangka teks, gambar, tabel, dan media menjadi layout yang rapi.
+                        </p>
+                    </section>
+                </article>
+
+                <article class="col-md-4">
+                    <section class="p-3 rounded-3 bg-light border h-100">
+                        <i class="bi bi-layers fs-4 text-warning mb-2 d-block"></i>
+
+                        <h3 class="h6 fw-bold">
+                            Element Series
+                        </h3>
+
+                        <p class="small text-muted mb-0">
+                            Terdiri dari susunan elemen (tag) seperti paragraf, judul, dan tombol.
+                        </p>
+                    </section>
+                </article>
+
+            </section>
+
+            <!-- Code Example -->
+            <figure class="bg-dark text-white rounded-3 p-3 position-relative font-monospace mb-0">
+
+                <span class="badge bg-danger position-absolute top-0 end-0 m-3">
+                    HTML Example
+                </span>
+
+                <pre class="mb-0 text-success-subtle"><code>&lt;p&gt;Ini adalah contoh tag paragraf sederhana.&lt;/p&gt;</code></pre>
+            </figure>
+
+        </article>
+
+        <!-- Section 2: Basic HTML Structure -->
+        <article class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+
+            <header class="d-flex align-items-center gap-3 border-bottom pb-3 mb-4">
+                <span class="p-3 bg-success bg-opacity-10 text-success rounded-3">
+                    <i class="bi bi-file-earmark-code fs-3"></i>
+                </span>
+
+                <h2 class="h3 fw-bold mb-0">
+                    2. Basic HTML Structure
+                </h2>
+            </header>
+
+            <section class="row g-4 align-items-center">
+
+                <figure class="col-lg-6 mb-0">
+                    <section class="bg-dark text-light rounded-3 p-3 position-relative font-monospace">
+
+                        <span class="badge bg-success position-absolute top-0 end-0 m-3">
+                            index.html
+                        </span>
+
+                        <pre class="mb-0 text-info"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Judul Utama&lt;/h1&gt;
+    &lt;p&gt;Konten paragraf pertama.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                    </section>
+                </figure>
+
+                <aside class="col-lg-6">
+
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item bg-transparent px-0">
+                            <code class="badge bg-danger-subtle text-danger fs-6 mb-1">&lt;!DOCTYPE html&gt;</code>
+
+                            <small class="text-secondary d-block">
+                                Mendeklarasikan bahwa dokumen menggunakan standar HTML5.
+                            </small>
+                        </li>
+
+                        <li class="list-group-item bg-transparent px-0">
+                            <code class="badge bg-danger-subtle text-danger fs-6 mb-1">&lt;html&gt;</code>
+
+                            <small class="text-secondary d-block">
+                                Elemen utama (root) pembungkus seluruh elemen di dalam halaman web.
+                            </small>
+                        </li>
+
+                        <li class="list-group-item bg-transparent px-0">
+                            <code class="badge bg-danger-subtle text-danger fs-6 mb-1">&lt;head&gt;</code>
+
+                            <small class="text-secondary d-block">
+                                Tempat menyimpan metadata, judul, dan pemanggilan file stylesheet.
+                            </small>
+                        </li>
+
+                        <li class="list-group-item bg-transparent px-0">
+                            <code class="badge bg-danger-subtle text-danger fs-6 mb-1">&lt;body&gt;</code>
+
+                            <small class="text-secondary d-block">
+                                Area utama yang memuat seluruh elemen visual yang dilihat pengguna.
+                            </small>
+                        </li>
+
+                    </ul>
+
+                </aside>
+
+            </section>
+        </article>
+
+        <!-- Section 3: Essential HTML Tags -->
+        <article class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+
+            <header class="d-flex align-items-center gap-3 border-bottom pb-3 mb-4">
+                <span class="p-3 bg-warning bg-opacity-10 text-warning rounded-3">
+                    <i class="bi bi-tags fs-3"></i>
+                </span>
+
+                <h2 class="h3 fw-bold mb-0">
+                    3. Essential HTML Tags
+                </h2>
+            </header>
+
+            <section class="table-responsive">
+
+                <table class="table table-hover align-middle border mb-0">
+
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col" class="w-25">Tag</th>
+                            <th scope="col" class="w-50">Deskripsi</th>
+                            <th scope="col" class="w-25">Contoh Sintaks</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <code class="badge bg-secondary-subtle text-dark fs-6">&lt;h1&gt; - &lt;h6&gt;</code>
+                            </td>
+                            <td>Menentukan tingkat hirarki judul/heading.</td>
+                            <td><code class="text-primary">&lt;h1&gt;Heading Utama&lt;/h1&gt;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <code class="badge bg-secondary-subtle text-dark fs-6">&lt;p&gt;</code>
+                            </td>
+                            <td>Membuat blok teks berupa paragraf.</td>
+                            <td><code class="text-primary">&lt;p&gt;Teks paragraf.&lt;/p&gt;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <code class="badge bg-secondary-subtle text-dark fs-6">&lt;a&gt;</code>
+                            </td>
+                            <td>Membuat tautan/hyperlink menuju halaman lain.</td>
+                            <td><code class="text-primary">&lt;a href="url"&gt;Klik di sini&lt;/a&gt;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <code class="badge bg-secondary-subtle text-dark fs-6">&lt;img&gt;</code>
+                            </td>
+                            <td>Menampilkan file gambar pada halaman.</td>
+                            <td><code class="text-primary">&lt;img src="foto.jpg" alt="Foto"&gt;</code></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <code class="badge bg-secondary-subtle text-dark fs-6">&lt;ul&gt; / &lt;ol&gt;</code>
+                            </td>
+                            <td>Membuat daftar poin (unordered) atau angka (ordered).</td>
+                            <td><code class="text-primary">&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </section>
+        </article>
+
+        <!-- Form & Project Structure -->
+        <section class="row g-4">
+
+            <!-- Section 4: HTML Forms -->
+            <article class="col-lg-7">
+
+                <section class="card border-0 shadow-sm rounded-4 p-4 h-100">
+
+                    <header class="d-flex align-items-center gap-3 border-bottom pb-3 mb-4">
+                        <span class="p-3 bg-info bg-opacity-10 text-info rounded-3">
+                            <i class="bi bi-ui-checks fs-3"></i>
+                        </span>
+
+                        <h2 class="h4 fw-bold mb-0">
+                            4. Interactive Form Example
+                        </h2>
+                    </header>
+
+                    <form onsubmit="return false;" class="bg-light p-4 rounded-3 border">
+
+                        <section class="mb-3">
+                            <label for="contact-name" class="form-label fw-semibold">
+                                Nama Lengkap
+                            </label>
+
+                            <section class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person"></i>
+                                </span>
+
+                                <input type="text" class="form-control" id="contact-name" placeholder="Masukkan nama Anda">
+                            </section>
+                        </section>
+
+                        <section class="mb-3">
+                            <label for="contact-email" class="form-label fw-semibold">
+                                Email
+                            </label>
+
+                            <section class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+
+                                <input type="email" class="form-control" id="contact-email" placeholder="nama@email.com">
+                            </section>
+                        </section>
+
+                        <section class="mb-3">
+                            <label for="contact-subject" class="form-label fw-semibold">
+                                Kategori
+                            </label>
+
+                            <select class="form-select" id="contact-subject">
+                                <option selected disabled>Pilih opsi...</option>
+                                <option>General Inquiry</option>
+                                <option>Technical Support</option>
+                            </select>
+                        </section>
+
+                        <section class="mb-3">
+                            <label for="contact-message" class="form-label fw-semibold">
+                                Pesan
+                            </label>
+
+                            <textarea class="form-control" id="contact-message" rows="3" placeholder="Tuliskan pesan Anda..."></textarea>
+                        </section>
+
+                        <button type="submit" class="btn btn-primary w-100 rounded-3 fw-bold">
+                            <i class="bi bi-send me-1"></i>
+                            Kirim Pesan
+                        </button>
+
+                    </form>
+
+                </section>
+            </article>
+
+            <!-- Section 5: Project Structure -->
+            <article class="col-lg-5">
+
+                <section class="card border-0 shadow-sm rounded-4 p-4 h-100">
+
+                    <header class="d-flex align-items-center gap-3 border-bottom pb-3 mb-4">
+                        <span class="p-3 bg-danger bg-opacity-10 text-danger rounded-3">
+                            <i class="bi bi-folder-symlink fs-3"></i>
+                        </span>
+
+                        <h2 class="h4 fw-bold mb-0">
+                            5. Project Structure
+                        </h2>
+                    </header>
+
+                    <p class="small text-muted mb-3">
+                        Struktur folder rapi untuk memudahkan pengelolaan file:
+                    </p>
+
+                    <figure class="bg-dark text-light p-3 rounded-3 font-monospace mb-0">
+
+                        <ul class="list-unstyled mb-0 small">
+                            <li class="text-warning">
+                                <i class="bi bi-folder-fill me-2"></i>project-root/
+                            </li>
+
+                            <li class="ps-3 text-info">
+                                <i class="bi bi-filetype-html me-2"></i>index.html
+                            </li>
+
+                            <li class="ps-3 text-warning">
+                                <i class="bi bi-folder-fill me-2"></i>css/
+                            </li>
+
+                            <li class="ps-4 text-white-50">
+                                <i class="bi bi-filetype-css me-2"></i>styles.css
+                            </li>
+
+                            <li class="ps-3 text-warning">
+                                <i class="bi bi-folder-fill me-2"></i>js/
+                            </li>
+
+                            <li class="ps-4 text-white-50">
+                                <i class="bi bi-filetype-js me-2"></i>app.js
+                            </li>
+
+                            <li class="ps-3 text-warning">
+                                <i class="bi bi-folder-fill me-2"></i>images/
+                            </li>
+
+                            <li class="ps-4 text-white-50">
+                                <i class="bi bi-file-image me-2"></i>logo.png
+                            </li>
+                        </ul>
+
+                    </figure>
+
+                </section>
+            </article>
+
+        </section>
+
+        <!-- Tools & Next Steps -->
+        <section id="section-tools" class="row g-4">
+
+            <aside class="col-md-6">
+
+                <section class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-primary-subtle text-primary-emphasis">
+
+                    <h3 class="h4 fw-bold mb-3 d-flex align-items-center gap-2">
+                        <i class="bi bi-tools text-primary"></i>
+                        Recommended Tools
+                    </h3>
+
+                    <ul class="list-group list-group-flush bg-transparent">
+
+                        <li class="list-group-item bg-transparent border-0 ps-0">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            <strong>Code Editor:</strong> VS Code / Sublime Text
+                        </li>
+
+                        <li class="list-group-item bg-transparent border-0 ps-0">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            <strong>Browser DevTools:</strong> Chrome / Firefox (F12)
+                        </li>
+
+                        <li class="list-group-item bg-transparent border-0 ps-0">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            <strong>Extensions:</strong> Live Server, Prettier
+                        </li>
+
+                    </ul>
+
+                </section>
+            </aside>
+
+            <aside class="col-md-6">
+
+                <section class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-success-subtle text-success-emphasis">
+
+                    <h3 class="h4 fw-bold mb-3 d-flex align-items-center gap-2">
+                        <i class="bi bi-signpost-split text-success"></i>
+                        Next Steps
+                    </h3>
+
+                    <ol class="ps-3 mb-0">
+
+                        <li class="mb-2">
+                            Pelajari <strong>CSS3</strong> untuk mengatur tata letak, warna, dan animasi.
+                        </li>
+
+                        <li class="mb-2">
+                            Pelajari <strong>JavaScript</strong> untuk menambahkan interaktivitas dinamis.
+                        </li>
+
+                        <li class="mb-0">
+                            Bangun proyek portofolio sederhana secara mandiri.
+                        </li>
+
+                    </ol>
+
+                </section>
+            </aside>
+
+        </section>
+
+        <!-- Footer / Summary -->
+        <footer class="bg-dark text-white rounded-4 p-4 p-md-5 text-center shadow-sm mt-3">
+
+            <h3 class="fw-bold mb-3">
+                <i class="bi bi-trophy text-warning me-2"></i>
+                Siap Memulai Perjalanan Web Dev Anda!
+            </h3>
+
+            <p class="text-white-50 mx-auto">
+                HTML adalah langkah awal. Terus latih pemahaman Anda dengan membuat proyek nyata setiap hari!
+            </p>
+
+            <hr class="border-secondary my-4">
+
+            <small class="text-secondary">
+                &copy; HTML Learning Project - Powered by Semantic HTML5 & Bootstrap 5
+            </small>
+
+        </footer>
+
+    </main>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
